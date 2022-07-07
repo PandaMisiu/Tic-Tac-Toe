@@ -40,7 +40,7 @@ void yourMove(int XorO)
 bool winX(char tab[3][3])
 {
 	// "---"
-	if (tab[0][0] == 'X' && tab[0][1] == 'X' && tab[0][2] == 'X')return 1;
+	     if (tab[0][0] == 'X' && tab[0][1] == 'X' && tab[0][2] == 'X')return 1;
 	else if (tab[1][0] == 'X' && tab[1][1] == 'X' && tab[1][2] == 'X')return 1;
 	else if (tab[2][0] == 'X' && tab[2][1] == 'X' && tab[2][2] == 'X')return 1;
 	// "|"
@@ -56,7 +56,7 @@ bool winX(char tab[3][3])
 bool winO(char tab[3][3])
 {
 	// "---"
-	if (tab[0][0] == 'O' && tab[0][1] == 'O' && tab[0][2] == 'O')return 1;
+	     if (tab[0][0] == 'O' && tab[0][1] == 'O' && tab[0][2] == 'O')return 1;
 	else if (tab[1][0] == 'O' && tab[1][1] == 'O' && tab[1][2] == 'O')return 1;
 	else if (tab[2][0] == 'O' && tab[2][1] == 'O' && tab[2][2] == 'O')return 1;
 	// "|"
@@ -74,7 +74,7 @@ void moveSwap(char tab[3][3], int XorO, int move)
 {
 	if (XorO % 2 == 0)
 	{
-		if (move == 1)tab[0][0] = 'O';
+		     if (move == 1)tab[0][0] = 'O';
 		else if (move == 2)tab[0][1] = 'O';
 		else if (move == 3)tab[0][2] = 'O';
 		else if (move == 4)tab[1][0] = 'O';
@@ -86,7 +86,7 @@ void moveSwap(char tab[3][3], int XorO, int move)
 	}
 	if (XorO % 2 != 0)
 	{
-		if (move == 1)tab[0][0] = 'X';
+		     if (move == 1)tab[0][0] = 'X';
 		else if (move == 2)tab[0][1] = 'X';
 		else if (move == 3)tab[0][2] = 'X';
 		else if (move == 4)tab[1][0] = 'X';
